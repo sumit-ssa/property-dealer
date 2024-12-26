@@ -75,21 +75,18 @@ export default function Hero() {
               <div className="inline-block bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium mb-2">
                 Your Trusted Partner
               </div>
-              <h1 className="text-5xl font-bold leading-tight">
-                Comprehensive <span className="text-blue-600">Insurance</span> &{" "}
+              <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
+                Comprehensive <span className="text-blue-600">Insurance</span> &
                 <span className="text-blue-600">Property</span> Solutions
               </h1>
-              <p className="text-lg text-gray-600 max-w-lg">
+              <p className="text-base lg:text-xl text-gray-600 max-w-lg">
                 Expert guidance in insurance coverage and real estate
                 investments. We offer personalized solutions for life insurance,
                 property deals, vehicle coverage, and more.
               </p>
               <div className="flex gap-4 pt-2">
                 <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors">
-                  Get Quote →
-                </button>
-                <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition-colors border-2 border-blue-600">
-                  Explore Properties
+                  Get in Touch
                 </button>
               </div>
             </div>
@@ -115,14 +112,14 @@ export default function Hero() {
               icon={Shield}
               title="Insurance Protection"
               description="Comprehensive coverage for life & assets"
-              className="top-4 left-4"
+              className="top-4 left-4 hidden lg:flex"
             />
 
             <FloatingCard
               icon={Home}
               title="Property Deals"
               description="Premium properties at best prices"
-              className="bottom-4 right-4"
+              className="bottom-4 right-4 hidden lg:flex"
             />
           </div>
         </div>

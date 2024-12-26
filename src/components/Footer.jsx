@@ -68,7 +68,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full flex items-center justify-between mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-between mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
           <p>Powered by - The Insurance Zone </p>
           <p>
             &copy; {new Date().getFullYear()} The Insurance Zone. All rights
