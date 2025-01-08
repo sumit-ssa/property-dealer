@@ -6,17 +6,13 @@ import Services from "../components/Services";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Hero />
-      <hr />
       <Aboutus />
-      <hr />
       <Services />
-      <hr />
       <Choose />
-      <hr />
       <Contact />
-    </div>
+    </>
   );
 };
 

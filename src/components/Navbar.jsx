@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md fixed w-full top-0 left-0 z-10">
       <nav className="container mx-auto p-6">
         <div className="flex justify-between items-center">
           <Link
