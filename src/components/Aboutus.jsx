@@ -1,6 +1,7 @@
 import { useSpring, animated } from "react-spring";
 
 import image from "../assets/hero-image.jpg";
+import { Link } from "react-router-dom";
 
 const Aboutus = () => {
   const props = useSpring({
@@ -21,19 +22,31 @@ const Aboutus = () => {
           <div className="md:w-1/2 md:pl-12">
             <h2 className="text-4xl font-bold mb-4">About Us</h2>
             <p className="text-gray-600 mb-6">
-              We are a leading provider of comprehensive insurance and real
-              estate solutions. With years of experience and a commitment to
-              excellence, we strive to secure your future and help you make
-              informed decisions about your investments.
+              I am Surindeer Gahlot an experienced insurance professional who
+              has been working in the field since 2006. I have over 18 years of
+              experience in the insurance industry, having worked with a variety
+              of insurance products and services. My career began as a manager
+              at a Maruti Suzuki dealership, where I worked until 2020. After
+              that, I started my own business and began using my expertise in
+              insurance and real estate.
             </p>
             <p className="text-gray-600 mb-6">
-              Our team of experts is dedicated to offering personalized services
-              tailored to your unique needs, whether you&#39;re looking for
-              insurance coverage, property investments, or financial advice.
+              Today, I provide personal and business insurance solutions to my
+              clients through The Insurance Zone, as well as my services in real
+              estate. My goal is to provide my clients with the information and
+              services they need for their financial security and stability. I
+              am committed to building a strong and trusting relationship with
+              my clients. I am always ready to understand my clients&rsquo;
+              requirements and solve their problems. I hope you will collaborate
+              with The Insurance Zone to meet your insurance and real estate
+              needs. I look forward to serving you!”
             </p>
-            <button className="bg-blue-600 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300">
+            <Link
+              to={"/about"}
+              className="bg-blue-600 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </animated.div>
       </div>

@@ -4,14 +4,13 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="w-full flex items-center justify-between gap-8">
           <div>
             <h3 className="text-2xl font-semibold my-4">The Insurance Zone</h3>
             <p className="text-gray-400">
               Comprehensive Insurance and Real Estate Solutions
             </p>
           </div>
-          <div></div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
@@ -59,10 +58,6 @@ const Footer = () => {
               <li className="text-gray-400 hover:text-white transition-colors">
                 Email : naman982825@gmail.com
               </li>
-              {/* <li className="text-gray-400 hover:text-white transition-colors">
-                Address : Visalakshi Prakruthi office, Thanisandra Main Road
-                Bangalore
-              </li> */}
             </ul>
           </div>
         </div>
