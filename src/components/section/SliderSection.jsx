@@ -108,9 +108,7 @@ const SliderSection = ({ data, layout }) => {
       <div className="flex flex-col gap-2">
         {data?.Icon && (
           <div className="w-16 lg:w-20 h-16 lg:h-20 p-2 mb-5 flex items-center text-2xl justify-center bg-blue-100 rounded-md">
-            {/* <div className="w-full h-full"> */}
             <data.Icon className="text-2xl h-10 w-10" />
-            {/* </div> */}
           </div>
         )}
 
@@ -164,7 +162,7 @@ const SliderSection = ({ data, layout }) => {
   );
 
   return (
-    <section className="container mx-auto px-4 py-20">
+    <section className={`container mx-auto px-4 py-10`}>
       <div
         className={`grid md:grid-cols-2 gap-8 items-center ${
           layout ? "md:grid-flow-col-dense" : ""

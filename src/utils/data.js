@@ -1,4 +1,14 @@
-import { Shield, Home, Car, Banknote, FileText } from "lucide-react";
+import {
+  Shield,
+  Home,
+  Car,
+  Banknote,
+  FileText,
+  CheckCircle,
+  UserCheck,
+  Handshake,
+  Clock,
+} from "lucide-react";
 import insurance1 from "../assets/insurance1.jpg";
 import insurance2 from "../assets/insurance2.jpg";
 import insurance3 from "../assets/insurance3.jpg";
@@ -130,5 +140,28 @@ export const ServicesData = [
         desc: "Comprehensive support for all your property transactions",
       },
     ],
+  },
+];
+
+export const FeaturesData = [
+  {
+    icon: CheckCircle,
+    title: "Expertise",
+    description: "Years of experience in insurance and real estate.",
+  },
+  {
+    icon: UserCheck,
+    title: "Trusted",
+    description: "Thousands of satisfied clients trust our services.",
+  },
+  {
+    icon: Handshake,
+    title: "Personalized",
+    description: "Tailored solutions to meet your unique needs.",
+  },
+  {
+    icon: Clock,
+    title: "24/7 Support",
+    description: "Round-the-clock assistance for your peace of mind.",
   },
 ];

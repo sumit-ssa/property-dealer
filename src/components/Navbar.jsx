@@ -15,15 +15,16 @@ const Navbar = () => {
             The Insurance Zone
           </Link>
           <div className="hidden md:flex space-x-4">
-            <a href="#" className="text-gray-800 hover:text-blue-600">
+            <a href="" className="text-gray-800 hover:text-blue-600">
               Home
-            </a>
-            <a href="#services" className="text-gray-800 hover:text-blue-600">
-              Services
             </a>
             <a href="#about" className="text-gray-800 hover:text-blue-600">
               About
             </a>
+            <a href="#services" className="text-gray-800 hover:text-blue-600">
+              Services
+            </a>
+
             <a href="#contact" className="text-gray-800 hover:text-blue-600">
               Contact
             </a>

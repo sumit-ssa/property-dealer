@@ -10,7 +10,7 @@ const ServiceSection = () => {
   });
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-24 bg-gradient-to-b from-blue-50 to-white" id="services">
       <animated.div style={fadeUp} className="container mx-auto px-4">
         <h2 className="text-5xl font-bold text-center mb-4 text-gray-800">
           Our Services

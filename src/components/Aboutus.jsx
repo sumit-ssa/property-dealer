@@ -13,5 +13,9 @@ export default function About() {
     ctaLink: "/about",
   };
 
-  return <SliderSection data={aboutData} />;
+  return (
+    <div id="about" className="pt-10 pb-20" >
+      <SliderSection data={aboutData} />
+    </div>
+  );
 }

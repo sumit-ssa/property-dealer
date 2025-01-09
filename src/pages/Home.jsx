@@ -2,7 +2,6 @@ import Aboutus from "../components/Aboutus";
 import Choose from "../components/Choose";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
-import Services from "../components/Services";
 import ServiceSection from "../components/ServiceSection";
 
 const Home = () => {
@@ -10,8 +9,7 @@ const Home = () => {
     <>
       <Hero />
       <Aboutus />
-      <ServiceSection/>
-      {/* <Services /> */}
+      <ServiceSection />
       <Choose />
       <Contact />
     </>

@@ -1,59 +1,52 @@
-/* eslint-disable react/prop-types */
-
 import { useSpring, animated } from "react-spring";
-import {
-  FaCheckCircle,
-  FaUserShield,
-  FaHandshake,
-  FaClock,
-} from "react-icons/fa";
+import { FeaturesData } from "../utils/Data";
 
-const ReasonCard = ({ icon: Icon, title, description }) => {
-  const props = useSpring({
-    opacity: 1,
-    transform: "scale(1)",
-    from: { opacity: 0, transform: "scale(0.8)" },
+const WhyChooseUs = () => {
+  const headerAnimation = useSpring({
+    from: { opacity: 0, transform: "translateY(20px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+    delay: 200,
+  });
+
+  const featuresAnimation = useSpring({
+    from: { opacity: 0, transform: "translateY(40px)" },
+    to: { opacity: 1, transform: "translateY(0)" },
+    delay: 600,
   });
 
   return (
-    <animated.div
-      style={props}
-      className="flex flex-col items-center text-center"
-    >
-      <Icon className="text-4xl text-blue-600 mb-4" />
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
-    </animated.div>
-  );
-};
+    <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <div className="max-w-7xl mx-auto">
+        <animated.div style={headerAnimation} className="text-center mb-16">
+          <h2 className="text-5xl font-bold text-center mb-4 text-gray-800">
+            Why Choose Us
+          </h2>
+          <p className="text-lg text-center mb-12 text-gray-600 max-w-5xl mx-auto">
+            We deliver exceptional service and outstanding results through our
+            core strengths.
+          </p>
+        </animated.div>
 
-const WhyChooseUs = () => {
-  return (
-    <section className="py-20 bg-gray-100">
-      <div className="container mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center mb-12">Why Choose Us</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <ReasonCard
-            icon={FaCheckCircle}
-            title="Expertise"
-            description="Years of experience in insurance and real estate."
-          />
-          <ReasonCard
-            icon={FaUserShield}
-            title="Trusted"
-            description="Thousands of satisfied clients trust our services."
-          />
-          <ReasonCard
-            icon={FaHandshake}
-            title="Personalized"
-            description="Tailored solutions to meet your unique needs."
-          />
-          <ReasonCard
-            icon={FaClock}
-            title="24/7 Support"
-            description="Round-the-clock assistance for your peace of mind."
-          />
-        </div>
+        <animated.div
+          style={featuresAnimation}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          {FeaturesData.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center p-6 rounded-lg hover:bg-white hover:shadow-lg transition-all duration-300"
+              >
+                <div className="mb-4 p-3 rounded-full bg-blue-50">
+                  <Icon className="w-8 h-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            );
+          })}
+        </animated.div>
       </div>
     </section>
   );
