@@ -6,7 +6,7 @@ import Privacy from "./pages/Privacy";
 import Layout from "./components/Layout";
 
 function App() {
-  console.log("ljk");
+  // console.log("ljk");
   return (
     <Layout>
       <Routes>
